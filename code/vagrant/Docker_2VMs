@@ -1,0 +1,19 @@
+# You can not start this in paralell!
+Vagrant.configure("2") do |config|
+  config.vm.define "ghost1" do |ghost1|
+    ghost1.vm.provider "docker" do |d|
+      d.name = "GhostBlog_One"
+      d.image = "ghost"
+      d.ports = ["80:2368"]
+    end
+  end
+
+  config.vm.define "ghost2" do |ghost2|
+    ghost2.vm.provider "docker" do |d|
+      d.name = "GhostBlog_Two"
+      d.image = "ghost"
+      d.cmd = ["tail", "-f", "/dev/null"]
+      d.ports = ["81:2368"]
+    end
+  end
+end
