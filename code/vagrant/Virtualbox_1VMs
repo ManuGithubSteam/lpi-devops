@@ -1,0 +1,6 @@
+Vagrant.configure("2") do |config|
+  config.vm.define "deb" do |deb|
+    deb.vm.box = "debian/jessie64"
+    deb.vm.synced_folder "share/", "/vagrant"
+  end
+end

@@ -1,0 +1,4 @@
+# Orginal repo, does not work anymore with the new vm version.
+# Did my own puppet module, installs htop in the vm and a bashrc file
+https://github.com/linuxacademy/content-LPIC-OT-vagrant-puppet
+
