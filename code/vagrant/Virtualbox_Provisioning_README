@@ -1,4 +1,7 @@
 # Orginal repo, does not work anymore with the new vm version.
 # Did my own puppet module, installs htop in the vm and a bashrc file
+# Orginal puppet is broken due to newer mysql version and will not start (varibale is missing)
+# Get working puppet file from my repo. There is also THIS file!
+
 https://github.com/linuxacademy/content-LPIC-OT-vagrant-puppet
 
